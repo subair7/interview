@@ -146,7 +146,6 @@ class _PostScreenState extends State<PostScreen> with WidgetsBindingObserver {
                                                   context,
                                                   listen: false)
                                               .removePost(index);
-                                          hitpostDetails();
                                         }
                                       },
                                       itemBuilder: (context) {
@@ -233,7 +232,6 @@ class _PostScreenState extends State<PostScreen> with WidgetsBindingObserver {
                                       id: 1,
                                       title: title.text,
                                       body: content.text));
-                              hitpostDetails();
                               Navigator.pop(context);
                               // your code
                             })
